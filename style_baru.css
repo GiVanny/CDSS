@@ -1,0 +1,342 @@
+* {
+    margin:0;
+    padding:0;
+}
+@media (min-width:600px) {
+    /* untuk file depan.php (input) */
+    /* bagian class hello world mulai */
+    .hello_world {
+        height:100vh;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        background-image: url(logo_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+    }
+    nav {
+        
+        background-color:black;
+        position:fixed;
+        top:0;
+        padding-top: 1vh;
+        backdrop-filter: blur(5px);
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height:15%;
+        width:100%;
+    }
+    .nav {
+        height: 85%;
+        width:80%;
+        display:flex;
+        align-items:flex-start;
+        justify-content: space-evenly;
+    }
+    
+    
+    .kotak_hello {
+        height:50%;
+        width:75%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.027);
+        backdrop-filter: blur(10px);
+        color:rgba(255, 255, 255, 0.815);
+        border:1px solid white;
+        
+    }
+    a {
+        text-decoration: none;
+        color:white;
+        display: block; 
+    }
+    .logo {
+        height: 100%;
+        width:25%;
+        background-image: url(logo_full_2.png);
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
+    }
+
+    
+    /* bagian class hello world selesai */
+    /* bagian page_satu mulai */
+    .page_satu {
+        display: flex;
+        width:100%;
+        height:100vh;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url(BG_page_tiga.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+    .page_dua {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:120vh;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url(BG_page_satu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+           
+    }
+    .page_tiga {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* ada kemungkinan hapus ini*/
+        width:100%;
+        height:200vh;
+        background-color: black;
+        background-image: url(logo_full_2.png);
+        background-repeat: no-repeat;
+        background-size: 50% 60%;
+        background-position: center; 
+    }
+    
+    .bagian_satu, .bagian_dua{
+        display: flex;
+        width: 100%;  
+    }
+    .bagian_satu {
+        height:70vh;
+        justify-content: space-evenly;
+    }
+    .bagian_dua {
+        height:30vh;
+        justify-content: flex-start;
+        
+    }
+    .pembatas {
+        height:5vh;
+        width:100%;
+        background-color: black;
+    }
+    .pembatas_atas {
+        height:15vh;
+        width:100%;
+        background-color: black;
+    }
+    .bagian_protein_dan_kolesterol {
+        display: flex;
+        flex-direction: column;
+        height:97%;
+        justify-content: space-around;
+    }
+    /* bagian isi page_satu mulai */
+     /* bagian kotak data pasien mulai */
+     .kotak_data_pasien {
+        border: 1px solid rgb(9, 241, 241);;
+        border-radius: 10px;
+        height:25vh;
+        width: 40vh; 
+        background-color: rgba(53, 51, 51, 0.356); 
+        backdrop-filter: blur(10px);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    input {
+        border:0.5px solid rgba(255, 255, 255, 0.295);
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.233);
+        backdrop-filter: blur(5px);
+        color:white;
+        
+
+    }
+    input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin:0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    .header {
+        height:20%;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .kotak_tabel {
+        height:80%;
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .kotak_pengumpulan_data_dan_informasi {
+        border:1px solid rgb(9, 241, 241);
+        border-radius: 10px;
+        height:75vh;
+        width: 60vh;  
+        background-color: rgba(255, 255, 255, 0.068);
+        backdrop-filter: blur(20px);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; 
+    }
+    .kotak_pemeriksaan_fisik {
+        border:1px solid rgb(9, 241, 241);
+        border-radius: 10px;
+        height:75vh;
+        width: 60vh;  
+        background-color: rgba(22, 21, 21, 0.226);
+        backdrop-filter: blur(20px);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; 
+
+    }
+    /* bagian page_satu selesai */
+    /* bagian page_dua mulai */
+    .kotak_elektrolit {
+        border:1px solid rgb(9, 241, 241);
+        border-radius: 10px;
+        width: 70vh;  
+        height:97%;
+        background-color: rgba(22, 21, 21, 0.226);
+        backdrop-filter: blur(20px);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header_elektrolit {
+        height:10%;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .kotak_cardiac_marker {
+        border:1px solid rgb(9, 241, 241);
+        border-radius: 10px;
+        width: 60vh;  
+        height:97%;
+        background-color: rgba(22, 21, 21, 0.226);
+        backdrop-filter: blur(20px);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; 
+    }
+    .kotak_fungsi_hati, .kotak_miscellaneous, .kotak_protein, .kotak_kolesterol {
+        border:1px solid rgb(9, 241, 241);
+        border-radius: 10px;
+        width: 60vh;  
+        background-color: rgba(22, 21, 21, 0.226);
+        backdrop-filter: blur(20px);
+        color:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .kotak_kolesterol, .kotak_protein {
+        height:90%;
+    }
+    .kotak_kolesterol {
+        margin-top: 1vh;
+    }
+    .kotak_fungsi_hati, .kotak_miscellaneous {
+        height:100%;
+        margin-left:5vh;
+    }
+    table {
+        width:90%;
+    }
+    /* bagian page_dua selesai */
+    /* bagian page_tiga mulai */
+    .header_pengobatan_yang_diterima {
+        height:10%;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+    }
+    .section_satu, .section_dua, .section_tiga, .section_empat, .section_lima, .section_enam, .section_tujuh, .section_delapan {
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+        height:30%;
+    }
+    .kotak_obat_1, .kotak_obat_2, .kotak_obat_3, .kotak_obat_4, .kotak_obat_5, .kotak_obat_6, .kotak_obat_7, .kotak_obat_8, .kotak_obat_9, .kotak_obat_10, .kotak_obat_11, .kotak_obat_12, .kotak_obat_13, .kotak_obat_14, .kotak_obat_15, .kotak_obat_16 {
+        width:45%;
+        height:90%;
+        border:1px solid rgb(9, 241, 241);
+        border-radius: 10px;
+        background-color: rgba(22, 21, 21, 0.226);
+        backdrop-filter: blur(20px);
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*bagian page_tiga selesai */
+    /* bagian button mulai */
+    .button {
+        height:10vh;
+        width:100%;
+        background-color: rgb(17, 10, 10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        height:70%;
+        width:20%; 
+        background-color:rgb(9, 241, 241);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color:black;
+        outline:none;
+        border:none;
+        cursor:pointer;
+       
+    }
+    /* bagian button selesai */
+    /* bagian animasi, hover, dan yang lainnya mulai */
+    button:hover, .kotak:hover, a:hover {
+        box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+        cursor:pointer;
+        color:rgb(9, 241, 241);
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    input:focus {
+        box-shadow: 0 0 50px 10px rgba(247, 245, 247, 0.952);
+        color:white; 
+        outline: none;
+   }
+    /* selesai */
+    /* untuk laman output mulai */
+
+    /* selesai */
+
+}
